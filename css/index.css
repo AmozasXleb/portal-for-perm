@@ -1,0 +1,360 @@
+body
+{
+  font-family: Montserrat Alternates;
+}
+
+.wrapper
+{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.header
+{
+  display: flex;
+  justify-content: center;
+}
+
+.counter
+{
+  padding: 10px;
+}
+
+.counter-wrapper
+{
+  height: 413px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  gap: 14px;
+  justify-content: center;
+  background: linear-gradient(180deg, rgba(206,243,255,1) 0%, rgba(255,255,255,1) 51%);
+}
+
+.counter-wrapper .reg-text
+{
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.counter-wrapper .red-text
+{
+  font-weight: 700;
+  font-size: 36px;
+  text-align: center;
+  color: #AF0707;
+}
+
+.counter-wrapper .counter-text
+{
+  font-weight: 600;
+  font-size: 140px;
+  text-align: center;
+  color: #5A9965;
+}
+
+.about-us
+{
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+}
+
+.about-us .text-part
+{
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.about-us .text-part .text-block
+{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  
+}
+
+.about-us .text-part .text-block .head-text
+{
+  font-size: 32px;
+  color: #01901A;
+  font-weight: 600;
+}
+
+.about-us .text-part .text-block .bottom-text
+{
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.about-us .logo-part
+{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-us .logo-part img
+{
+  width: 495px;
+  height: 494px;
+}
+
+.gallery
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 36px;
+}
+.gallery-block
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 36px;
+}
+
+.gallery-block .zag
+{
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.gallery .foto-block
+{
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  height: 255px;
+  border: 1px solid;
+  border-color: #000000;
+  justify-content: center;
+  padding: 10px;
+}
+
+.gallery .foto-block .text
+{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 3px;
+  margin-top: 5px;
+}
+
+.gallery .foto-block .text span
+{
+  text-align: center;
+}
+
+#date
+{
+  font-size: 10px;
+}
+
+#type-of
+{
+  font-size: 15px;
+}
+
+.gallery .foto-block .img
+{
+  width: 100%;
+}
+
+.reg-avto
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.reg-avto .reg-text
+{
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.reg-avto .big-text
+{
+  font-weight: 600;
+  font-size: 48px;
+  color: #01901A;
+}
+
+.forms
+{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background: #01901A;
+  gap: 15px;
+}
+
+.reg, .avto
+{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 50%;
+  background-color: white;
+  padding: 15px;
+}
+
+.reg, .avto span
+{
+  font-size: 48px;
+  font-weight: 600;
+} 
+
+.reg .checkbox
+{
+  font-size: 16px;
+  font-weight: 400;
+  width: 100%;
+  text-align: left;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.reg input
+{
+    font-size: 24px;
+    height: 29px;
+    padding: 10px;
+    background: rgb(231, 246, 255);
+    border-radius: 22px;
+    border-style: none;
+    color: rgb(162, 162, 162);
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+} 
+
+.reg .submit 
+{
+  width: max-content;
+  display: flex;
+  background: #01901A;
+  color: white;
+  font-size: 23px;
+  justify-content: center;
+  padding: 10px 15px;
+  font-family: Montserrat Alternates;
+  border-style: none;
+  border: none;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.avto input
+{
+    font-size: 24px;
+    height: 29px;
+    padding: 10px;
+    background: rgb(231, 246, 255);
+    border-radius: 22px;
+    border-style: none;
+    color: rgb(162, 162, 162);
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+} 
+
+.avto .submit 
+{
+  width: max-content;
+  display: flex;
+  background: #01901A;
+  color: white;
+  font-size: 23px;
+  justify-content: center;
+  padding: 10px 15px;
+  font-family: Montserrat Alternates;
+  border-style: none;
+  border: none;
+  font-weight: 600;
+  margin: 0 auto;
+}
+
+.footer
+{
+  margin-top: 30px;
+  background: #01901A;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  width: 100%;
+  font-weight: 600;
+  padding-bottom: 70px;
+}
+
+.footer span
+{
+  padding: 10px;
+}
+
+
+@media screen and (width < 740px) {
+  .counter-wrapper .red-text {
+    font-size: 31px;
+  }
+
+  .about-us {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .about-us .logo-part {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+  }
+
+  .about-us .text-part .text-block .bottom-text {
+    font-size: 27px;
+  }
+
+  .about-us .text-part .text-block {
+    text-align: center;
+  }
+
+  .gallery {
+    flex-wrap: wrap;
+  }
+
+  .forms {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .reg, .avto {
+    gap: 20px;
+    width: 96%;
+  }
+}
+
+@media screen and (width < 990px) {
+
+
+  .gallery {
+    flex-wrap: wrap;
+  }
+
+}
