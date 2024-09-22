@@ -30,7 +30,6 @@ body
   font-weight: 600;
   padding-bottom: 70px;
   bottom: 0px;
-  position: absolute;
 }
 
 .footer span
@@ -106,9 +105,9 @@ body
 }
 .input-kat input
 {
-    width: 70%;
+    width: 72%;
     font-size: 24px;
-    height: 29px;
+    height: 49px;
     padding: 10px;
     background: rgb(231, 246, 255);
     border-radius: 22px;
@@ -139,11 +138,16 @@ body
 {
     display: flex;
     flex-direction: row;
+    gap: 5px;
+    margin-top: 20px;
 }
 
 .line-kat span
 {
-
+    width: 86%;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
 }
 
 .line-kat button
@@ -160,6 +164,65 @@ body
     border: none;
     font-weight: 600;
 }
+
+.block
+{
+    display: flex;
+    flex-direction: column;
+    background: #E7F6FF;
+    padding: 10px;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.block span
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#good
+{
+    width: max-content;
+    display: flex;
+
+    background: #01901A;
+    color: white;
+    font-size: 23px;
+    justify-content: center;
+    padding: 10px 15px;
+    font-family: Montserrat Alternates;
+    border-style: none;
+    border: none;
+    font-weight: 600;
+}
+
+#bad
+{
+    width: max-content;
+    display: flex;
+    background: #915034;
+    color: white;
+    font-size: 23px;
+    justify-content: center;
+    padding: 10px 15px;
+    font-family: Montserrat Alternates;
+    border-style: none;
+    border: none;
+    font-weight: 600;
+}
+
+.buttons
+{
+    display: flex;
+    gap: 10px;
+}
+
+.block img
+{
+    width: 50%;
+}
+
 @media screen and (width < 740px) {
   
 }

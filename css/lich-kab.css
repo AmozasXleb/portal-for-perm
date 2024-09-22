@@ -1,0 +1,375 @@
+body
+{
+  font-family: Montserrat Alternates;
+}
+
+.wrapper
+{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+
+.header
+{
+  display: flex;
+  justify-content: center;
+}
+
+
+.footer
+{
+  margin-top: 30px;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  color: rgb(0, 0, 0);
+  width: 100%;
+  font-weight: 600;
+  padding-bottom: 70px;
+  bottom: 0px;
+}
+
+.footer span
+{
+  padding: 10px;
+}
+
+
+.header-line
+{
+    background: #759FBC;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding: 10px 20px;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.air
+{
+    width: 81%;
+}
+
+.header-line button
+
+{
+    border: none;
+    background: none;
+    font-size: 20PX;
+    font-weight: 600;
+    font-family: Montserrat Alternates;
+    color: white;
+    
+}
+
+.menu
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    gap: 5px;
+}
+
+.menu button
+{
+    border: none;
+    background: none;
+    font-family: Montserrat Alternates;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.main-blocks
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input-kat
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 10px;
+}
+
+
+.input-kat button
+{
+    width: max-content;
+    display: flex;
+    background: #01901A;
+    color: white;
+    font-size: 23px;
+    justify-content: center;
+    padding: 10px 15px;
+    font-family: Montserrat Alternates;
+    border-style: none;
+    border: none;
+    font-weight: 600;
+}
+
+.line-kat
+{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.line-kat span
+{
+    width: 86%;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+}
+
+.block button
+{
+    width: max-content;
+    display: flex;
+    background: #915034;
+    color: white;
+    font-size: 16px;
+    justify-content: center;
+    padding: 10px 15px;
+    font-family: Montserrat Alternates;
+    border-style: none;
+    border: none;
+    font-weight: 400;
+    background: #284285;
+    color: #ffffff;
+}
+
+
+
+.block
+{
+    display: flex;
+    flex-direction: column;
+    background: #E7F6FF;
+    padding: 10px;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.block span
+{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+.buttons
+{
+    display: flex;
+    gap: 10px;
+}
+
+.block img
+{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+.my-zav
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    gap: 50px;
+}
+
+.fin-zav
+{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    gap: 20px;
+}
+
+.head
+{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.in-progress
+{
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+    gap: 20px;
+}
+
+.blocks
+{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.make-zav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.dow-foto
+{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    height: max-content;
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    padding: 10px;
+    gap: 30px;
+}
+
+.dow-foto input
+{
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 400;
+    margin: 0 auto;
+}
+
+.form-info
+{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.fill-info
+{
+    width: 50%;
+}
+
+.form-info span
+{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.form-info input
+{
+    font-size: 24px;
+    height: 49px;
+    padding: 10px;
+    background: rgb(231, 246, 255);
+    border-radius: 22px;
+    border-style: none;
+    color: rgb(162, 162, 162);
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.form-info select
+{
+    font-size: 24px;
+    height: max-content;
+    padding: 10px;
+    background: rgb(231, 246, 255);
+    border-radius: 22px;
+    border-style: none;
+    color: rgb(162, 162, 162);
+    font-family: Montserrat Alternates;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+}
+
+.form-info button
+{
+    width: max-content;
+    display: flex;
+    background: #915034;
+    color: white;
+    font-size: 24px;
+    justify-content: center;
+    padding: 10px 15px;
+    font-family: Montserrat Alternates;
+    border-style: none;
+    border: none;
+    font-weight: 400;
+    background: #01901A;
+    color: #ffffff;
+}
+
+
+
+
+@media screen and (width < 740px) {
+  
+    .my-zav
+    {
+        flex-direction: column;
+    }
+
+    .fin-zav, .in-progress
+    {
+        width: 100%;
+    }
+
+    .air
+    {
+        width: 55%;
+    }
+
+    .header-line button
+    {   
+        font-size: 16px;
+    }
+
+    .header-line span
+    {
+        font-size: 16px;
+    }
+
+    .make-zav
+    {
+        flex-direction: column;
+        gap: 70px;
+    }
+
+    .dow-foto
+    {
+        width: 100%;
+    }
+
+    .fill-info
+    {
+        width: 100%;
+        
+    }
+    
+}
+
+@media screen and (width < 990px) {
+
+
+}
