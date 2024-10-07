@@ -223,6 +223,13 @@ body
     width: 50%;
 }
 
+.blocks
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 @media screen and (width < 740px) {
   
 }

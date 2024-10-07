@@ -10,7 +10,7 @@ if($conn->connect_error){
 $login = $conn->real_escape_string($_POST["login"]);
 $password = $conn->real_escape_string($_POST["password"]);
 
-if ($login != "admin" && $password != "admin")
+if ($login != "admin" && $password != "adminWSR")
 {
     $stmt = $conn->prepare("SELECT * FROM users WHERE login = ? AND password = ?");
     $stmt->bind_param("ss", $login, $password);

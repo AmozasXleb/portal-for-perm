@@ -63,7 +63,7 @@ if(!isset($_SESSION['user_id']))
 
                                 $id = $_SESSION['user_id'];
     
-                                $stmt = $conn->prepare("SELECT * FROM problems WHERE isFinished = 1 AND user = ?");
+                                $stmt = $conn->prepare("SELECT * FROM problems WHERE isFinished = 1 AND user = ? ORDER BY id DESC");
                                 $stmt->bind_param("i", $id); 
                                 $stmt->execute();
                                 
@@ -76,6 +76,7 @@ if(!isset($_SESSION['user_id']))
                                             <span class='opis'>Описание: " . $row['description'] . "</span>
                                             <img src=" . $row['imageAfter'] . ">
                                             <span class='kategory'>Категория: " . $row['kategory'] . "</span>
+                                            <span class='kategory'>Дата: " . $row['date'] . "</span>
                                             </div>";
                                     }
                                 }
@@ -99,7 +100,9 @@ if(!isset($_SESSION['user_id']))
 
                             $id = $_SESSION['user_id'];
 
-                            $stmt = $conn->prepare("SELECT * FROM problems WHERE isFinished = 0 AND user = ?");
+                            $dateNow = date('Y-m-d');
+
+                            $stmt = $conn->prepare("SELECT * FROM problems WHERE isFinished = 0 AND user = ? ORDER BY id DESC");
                             $stmt->bind_param("i", $id); 
                             $stmt->execute();
                             
@@ -112,7 +115,12 @@ if(!isset($_SESSION['user_id']))
                                         <span class='opis'>Описание: " . $row['description'] . "</span>
                                         <img src=" . $row['image'] . ">
                                         <span class='kategory'>Категория: " . $row['kategory'] . "</span>
-                                        <form action='php-scripts/whatToDo.php' method='post'><button type='submit' id='id' name='reject' value='" . $row['id'] . "' >Отменить заявку</button></form>
+                                        <span class='kategory'>Дата: " . $row['date'] . "</span>";
+                                        if ($row['date']==$dateNow)
+                                        {
+                                            echo "<span class='kategory' style='color='green''>Новая!</span>";
+                                        }
+                                        echo "<form action='php-scripts/whatToDo.php' method='post'><button type='submit' id='id' name='reject' value='" . $row['id'] . "' >Отменить заявку</button></form>
                                         </div>";
                                 }
                             }

@@ -39,9 +39,7 @@ if (!($_SESSION['user_id'] == '') and !($_SESSION['user_id'] == 'none'))
 <body>
     <div class="wrapper">
         <div class="header">
-            <a href="index.php">
                 <img src="img/header.png" alt="В наших руках!">
-            </a>
         </div>
         <div class="counter">
             <div class="counter-wrapper">
@@ -53,20 +51,24 @@ if (!($_SESSION['user_id'] == '') and !($_SESSION['user_id'] == 'none'))
         </div>
 
         <script>
-            var intCounter = document.getElementById('counter');
+    var intCounter = document.getElementById('counter');
 
-            var number = localStorage.getItem('counterValue') ? parseInt(localStorage.getItem('counterValue')) : 0;
+    function updateCounter() {
+        fetch('php-scripts/getData.php')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data); 
+            intCounter.textContent = data;
+        })
+        .catch(error => console.error('Error:', error));
+    }
 
-            function updateCounter() {
-                number++; 
-                intCounter.textContent = number; 
-                localStorage.setItem('counterValue', number);
-            }
+    updateCounter();
 
-            setInterval(updateCounter, 2000);
 
-            intCounter.textContent = number;
-        </script>
+    setInterval(updateCounter, 5000);
+</script>
+
 
         <div class="about-us">
             <div class="text-part">

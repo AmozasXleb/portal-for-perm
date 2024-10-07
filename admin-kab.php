@@ -87,10 +87,12 @@ if(!isset($_SESSION['user_id']))
                 
                         require("php-scripts/conn.php");
 
-                        $stmt = $conn->prepare("SELECT * FROM problems WHERE isFinished = 0");
+                        $stmt = $conn->prepare("SELECT * FROM problems WHERE isFinished = 0 ORDER BY id DESC");
                         $stmt->execute();
                         
                         $result = $stmt->get_result();
+
+                        $dateNow = date('Y-m-d');
 
                         if ($result->num_rows > 0) {
                             while ($row = $result->fetch_assoc()) {
@@ -99,7 +101,12 @@ if(!isset($_SESSION['user_id']))
                                 <span class='opis'>Описание: " . $row['description'] . "</span>
                                 <img src='" . $row['image'] . "'>
                                 <span class='kategory'>Категория: " . $row['kategory'] . "</span>
-                                <input type='file' name='file'>
+                                <span class='kategory'>Дата: " . $row['date'] . "</span>";
+                                if ($row['date']==$dateNow)
+                                        {
+                                            echo "<span class='kategory' style='color='green''>Новая!</span>";
+                                        }
+                                echo "<input type='file' name='file'>
                                 <div class='buttons'>
                                 <button type='submit' name='good' id='good' value='" . $row['id'] . "'>Решено</button>
                                 <button type='submit' name='bad' id='bad' value='" . $row['id'] . "'>Отклонена</button>
